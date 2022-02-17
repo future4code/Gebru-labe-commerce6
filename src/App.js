@@ -4,12 +4,12 @@ import Produtos from "./components/produtos/Produtos";
 import Carrinho from "./components/carrinho/Carrinho";
 import Filtro from "./components/filtro/Filtro";
 import styled from "styled-components";
-import produto1 from "./img/produto1.jpg";
-import produto2 from "./img/produto2.jpg";
-import produto3 from "./img/produto3.jpg";
-import produto4 from "./img/produto4.jpg";
-import produto5 from "./img/produto5.jpg";
-import produto6 from "./img/produto6.jpg";
+import produto1 from "./img/produto1.jpeg";
+import produto2 from "./img/produto2.jpeg";
+import produto3 from "./img/produto3.jpeg";
+import produto4 from "./img/produto4.jpeg";
+import produto5 from "./img/produto5.jpeg";
+import produto6 from "./img/produto6.jpeg";
 
 
 const AppContainer = styled.div`
@@ -18,44 +18,45 @@ const AppContainer = styled.div`
   font-family: sans-serif;
   display: grid;
   grid-template-rows: 1fr 3fr;
-  gap: 8px;
+  
 `;
+
 
 const produtos = [
   {
     cod: 1,
-    nome: "ESCOLHER O NOME",
-    valor: 0,
+    nome: "Foguete espacial",
+    valor: 125,
     img: produto1,
   },
   {
     cod: 2,
-    nome: "ESCOLHER O NOME",
-    valor: 0,
+    nome: "kit de naves espaciais e satélite",
+    valor: 99,
     img: produto2,
   },
   {
     cod: 3,
-    nome: "ESCOLHER O NOME",
-    valor: 0,
+    nome: "kit espacial astronautas",
+    valor: 73,
     img: produto3,
   },
   {
     cod: 4,
-    nome: "ESCOLHER O NOME",
-    valor: 0,
+    nome: "Boneco Buzz Lightyear",
+    valor: 129,
     img: produto4,
   },
   {
     cod: 5,
-    nome: "ESCOLHER O NOME",
-    valor: 0,
+    nome: "Nave snape-ships-sabre",
+    valor: 58,
     img: produto5,
   },
   {
     cod: 6,
-    nome: "ESCOLHER O NOME",
-    valor: 0,
+    nome: "Nave espacial",
+    valor: 41,
     img: produto6,
   },
   

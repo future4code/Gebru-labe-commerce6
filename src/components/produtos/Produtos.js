@@ -10,20 +10,27 @@ const Cabecalho = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   p {
-    
+   
   }
   select {
-    
+   
   }
 `;
+
 
 const GridProdutos = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0px;
   margin: 10px;
-`
+  align-items: center;
+  padding: 0px 50px;
+ 
+  `
+;
+
 
 class Produtos extends React.Component {
   state = {
