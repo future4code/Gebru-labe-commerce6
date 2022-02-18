@@ -5,12 +5,21 @@ import styled from "styled-components";
 const ContainerDeProdutos = styled.div`
   
 `;
-
+const CaixaDeOrdenacao = styled.label`
+font-size:18px;
+font-weight:bold;
+margin-right:5%;
+`
+// Estilizei a Ordenação
 const Cabecalho = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  font-weight:bold;
+=======
   
+
   p {
    
   }
@@ -18,6 +27,7 @@ const Cabecalho = styled.div`
    
   }
 `;
+// Estilizei Estoque de Produtos
 
 
 const GridProdutos = styled.div`
@@ -25,11 +35,17 @@ const GridProdutos = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 0px;
   margin: 10px;
+
+`
+const EstoqueProduto = styled.p`
+margin-left:5%;
+
   align-items: center;
   padding: 0px 50px;
  
   `
 ;
+
 
 
 class Produtos extends React.Component {
@@ -54,14 +70,14 @@ class Produtos extends React.Component {
     return (
       <ContainerDeProdutos>
         <Cabecalho>
-          <p>Estoque de produtos: {listaFiltrada.length}</p>
-          <label>
+          <EstoqueProduto>Estoque de produtos: {listaFiltrada.length}</EstoqueProduto>
+          <CaixaDeOrdenacao>
             Ordenação:
             <select value={this.state.ordenacao} onChange={this.alteraOrdenacao}>
               <option value={"Crescente"}>Crescente</option>
               <option value={"Decrescente"}>Decrescente</option>
             </select>
-          </label>
+          </CaixaDeOrdenacao>
         </Cabecalho>
         <GridProdutos>
           {listaFiltrada.map((produto) => {

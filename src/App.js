@@ -18,6 +18,12 @@ const AppContainer = styled.div`
   font-family: sans-serif;
   display: grid;
   grid-template-rows: 1fr 3fr;
+
+  gap: 8px;
+  background-color:#f7b900;
+  
+
+
   
 `;
 
