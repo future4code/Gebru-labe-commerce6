@@ -10,8 +10,8 @@ import produto3 from "./img/produto3.jpeg";
 import produto4 from "./img/produto4.jpeg";
 import produto5 from "./img/produto5.jpeg";
 import produto6 from "./img/produto6.jpeg";
-
-
+import Footer from "./components/footer/Footer"
+import cartoes from "./img/cartoes.png"
 const AppContainer = styled.div`
   margin: 0px;
   padding: 0px;
@@ -156,7 +156,9 @@ class App extends React.Component {
           filtroNome={this.state.filtroNome}
           adicionaProdutoNoCarrinho={this.adicionaProdutoNoCarrinho}
         />
+        <Footer/>
       </AppContainer>
+      
     );
   }
 }
