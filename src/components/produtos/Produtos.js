@@ -15,25 +15,39 @@ const Cabecalho = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   font-weight:bold;
+=======
+  
+
   p {
-    
+   
   }
   select {
-    
+   
   }
 `;
 // Estilizei Estoque de Produtos
+
 
 const GridProdutos = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0px;
   margin: 10px;
+
 `
 const EstoqueProduto = styled.p`
 margin-left:5%;
-`
+
+  align-items: center;
+  padding: 0px 50px;
+ 
+  `
+;
+
+
+
 class Produtos extends React.Component {
   state = {
     ordenacao: "Crescente"

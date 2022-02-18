@@ -4,6 +4,7 @@ import styled from "styled-components"
 const CardsContainer = styled.div`
   display: flex;
   flex-direction: column;
+
   align-items: center; 
   /* border: 1px solid; */
   margin:10px 10px;
@@ -26,6 +27,16 @@ transform: scale(1.1);
 transition: 0.3s ease;
   }
     
+
+ 
+
+  img {
+    display: flex;
+    width: 50%;
+    margin: 0 auto; 
+    align-items: center;
+   
+
   }
 `
             // adicionei efeito hover as imagens
@@ -35,11 +46,11 @@ const CardInfos = styled.div`
    flex-direction: column;
    justify-content: center;
    align-items: center;
-
 `
 // estilizei os botões Adicionar ao Carrinho
 const AddCarrinho = styled.button`
   align-self: center;
+
   background-color: #52af26; /* Green */
   border-radius: 10px;
     border: none;
@@ -56,6 +67,10 @@ const AddCarrinho = styled.button`
     :hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+  margin-bottom: 60px;
+  
+
 `
 
 class Card extends React.Component {
