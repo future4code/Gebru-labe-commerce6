@@ -8,6 +8,7 @@ align-items: center;
 justify-content: space-evenly;
 background-color: #ea1744;
 
+
 `
 
 const DivInput = styled.label`
@@ -16,7 +17,7 @@ const DivInput = styled.label`
 `
 const EstiloInputs = styled.input`
 width: 80%;
-	margin: 0 auto;
+margin: 0 auto;
 	padding: 10px;
 	border: none;
   margin-top: 10px;

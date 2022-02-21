@@ -5,6 +5,7 @@ const ContainerdoCarrinho = styled.div`
   /* border: 1px solid black; */
   background-color: #06aed5;
   padding: 0px;
+  
 `;
 // Adicionei cor de Fundo Azul no Container do Carrinho
 const ContainerLista = styled.div`
