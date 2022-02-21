@@ -1,5 +1,6 @@
 import React from "react";
-
+import Header from "./components/header/Header"
+import Carrossel from "./components/header/CarrosselPromo";
 import Produtos from "./components/produtos/Produtos";
 import Carrinho from "./components/carrinho/Carrinho";
 import Filtro from "./components/filtro/Filtro";
@@ -17,8 +18,8 @@ const AppContainer = styled.div`
   padding: 0px;
   font-family: sans-serif;
   display: grid;
-  grid-template-rows: 1fr 3fr;
-
+  grid-template-rows: 1fr;
+  width: 100%;
   gap: 8px;
   background-color:#f7b900;
   
@@ -135,28 +136,34 @@ class App extends React.Component {
   render() {
     return (
       <AppContainer>
-        <Filtro
+          <Carrossel/>
+          <Header/>
+          <Filtro
           filtroMin={this.state.filtroMin}
           filtroMax={this.state.filtroMax}
           filtroNome={this.state.filtroNome}
           onChangeFiltroMin={this.onChangeFiltroMin}
           onChangeFiltroMax={this.onChangeFiltroMax}
           onChangeFiltroNome={this.onChangeFiltroNome}
-        />
+          />
 
-        <Carrinho
+         <Carrinho
           produtosNoCarrinho={this.state.produtosNoCarrinho}
           removeProdutoCarrinho={this.removeProdutoCarrinho}
-        />
+         />
 
-        <Produtos
+         <Produtos
           produtos={produtos}
           filtroMin={this.state.filtroMin}
           filtroMax={this.state.filtroMax}
           filtroNome={this.state.filtroNome}
           adicionaProdutoNoCarrinho={this.adicionaProdutoNoCarrinho}
+         />
+        
+
         />
         <Footer/>
+master
       </AppContainer>
       
     );
