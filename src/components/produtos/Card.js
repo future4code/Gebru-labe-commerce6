@@ -38,7 +38,8 @@ transition: 0.3s ease;
    
 
   }
-`
+  }`
+
             // adicionei efeito hover as imagens
             // e setei tamanho unico para todas as imagens
 const CardInfos = styled.div`

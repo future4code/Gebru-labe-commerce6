@@ -17,7 +17,7 @@ const Cabecalho = styled.div`
   align-items: center;
 
   font-weight:bold;
-=======
+
   
 
   p {

@@ -6,7 +6,7 @@ const DivFiltro = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-evenly;
-background-color: #ea1744;
+background-color: #52af26;
 
 
 `
