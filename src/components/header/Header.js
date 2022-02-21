@@ -1,24 +1,20 @@
 import React from "react"
 import Logo from "../../img/space-toys_logo.png";
 import styled from "styled-components";
-import Carrosel from "./CarrosselPromo";
 
 const DivHeader = styled.div`
 display:flex;
-margin: 0px;
-width: 100%;
-background-color: #FFFFFF;
-flex-direction: column;
-align-items: center;
-height: 200px;
+position: absolute;
+height: 100px;
 
 `
 
 const LogoImg = styled.img `
 display: flex;
-height: 100%;
-justify-content: flex-start;
-align-items: flex-start;
+height: 120px;
+margin-top: 30px;
+margin-left: 10px;
+
 
 
 

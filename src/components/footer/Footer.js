@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components"
 
 const EstiloFooter = styled.div`
-background-color: #52af26;
+background-color: #53af26;
 
 
 `

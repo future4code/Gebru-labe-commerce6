@@ -5,12 +5,12 @@ import Produtos from "./components/produtos/Produtos";
 import Carrinho from "./components/carrinho/Carrinho";
 import Filtro from "./components/filtro/Filtro";
 import styled from "styled-components";
-import produto1 from "./img/produto1.jpeg";
-import produto2 from "./img/produto2.jpeg";
-import produto3 from "./img/produto3.jpeg";
-import produto4 from "./img/produto4.jpeg";
-import produto5 from "./img/produto5.jpeg";
-import produto6 from "./img/produto6.jpeg";
+import produto1 from "./img/produto1.png";
+import produto2 from "./img/produto2.png";
+import produto3 from "./img/produto3.png";
+import produto4 from "./img/produto4.png";
+import produto5 from "./img/produto5.png";
+import produto6 from "./img/produto6.png";
 import Footer from "./components/footer/Footer"
 import cartoes from "./img/cartoes.png"
 const AppContainer = styled.div`
@@ -21,12 +21,13 @@ const AppContainer = styled.div`
   grid-template-rows: 1fr;
   width: 100%;
   gap: 8px;
-  background-color:#f7b900;
+  background-color:#ffff;
   
 
 
   
 `;
+
 
 
 const produtos = [
@@ -85,7 +86,7 @@ class App extends React.Component {
   };
 
   onChangeFiltroNome = (event) => {
-    this.setState({ filtroNome: event.target.value.toUpperCase() });
+    this.setState({ filtroNome: event.target.value });
   };
 
   adicionaProdutoNoCarrinho = (codProduto) => {
@@ -160,10 +161,7 @@ class App extends React.Component {
           adicionaProdutoNoCarrinho={this.adicionaProdutoNoCarrinho}
          />
         
-
-        />
         <Footer/>
-master
       </AppContainer>
       
     );

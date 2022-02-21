@@ -5,6 +5,7 @@ const ContainerdoItem = styled.div`
     grid-auto-flow: column;
     gap: 4px;
     align-items: center;
+    position: relative;
     
     p {
         margin: 0;
@@ -15,23 +16,18 @@ const BotaoRemover = styled.button`
 
 font-size: 16px;
 margin: auto;
-background-color: #52af26; /* Green */
+background-color: 	#ea1744; 
   border-radius: 10px;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 6px ;
     text-align: center;
-    text-decoration: none;   
-    display: inline-block;
+    margin-bottom: 4px;
     font-size: 16px;
     
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    :hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-    
+   
+}   
 `
 // Estilizei o botao remover
 class ItemCarrinho extends React.Component {

@@ -7,14 +7,8 @@ const CarrosselEdit = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-
-
-background-color: #06aed5;
+background-color: #53af26;
 height: 40px;
-
-
-
-
 `
 
 
@@ -23,7 +17,7 @@ const CarrosselMenu = ()=>{
      
      <Carousel infiniteLoop useKeyboardArrows autoPlay>    
       <CarrosselEdit>
-        <h3>Frete Grátis para todo Brasil</h3>
+        <h3>Frete Grátis para todo Brasil em Produtos Space Toys Acima de R$150.</h3>
       </CarrosselEdit>
 
       <CarrosselEdit>

@@ -2,21 +2,27 @@ import React from "react";
 import styled from "styled-components"
 import ItemCarrinho from "./ItemCarrinho";
 const ContainerdoCarrinho = styled.div`
-  /* border: 1px solid black; */
-  background-color: #06aed5;
+  height: 110px;
+  background-color: #A0C3FA;
+  display: flex;
+  align-items: center;
   padding: 0px;
+  margin-top: -72px;
   
 `;
 // Adicionei cor de Fundo Azul no Container do Carrinho
 const ContainerLista = styled.div`
-  display: grid;
+ 
   gap: 4px;
+  margin-left: 2%;
 `
 const EstiloCarrinho = styled.h3`
-margin-left:5%;
+display: flex;
+margin-left:10%;
 `
 const EstiloValorTotal = styled.h4`
-margin-left:5%;
+display: flex;
+margin-left:15%;
 `
 // recuei a margem do texto carrinho e valor total
 class Carrinho extends React.Component {

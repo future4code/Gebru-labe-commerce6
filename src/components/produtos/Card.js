@@ -10,7 +10,7 @@ const CardsContainer = styled.div`
   margin:10px 10px;
   border-radius:20px;
   box-shadow: 2px 2px 9px grey;
-  background-color:white;
+  background: linear-gradient(150deg, #f6b900 5%, #E6A570, #fae9b4);
   /* Adicionei cantos arredondados nos cards e um pouco de sombra */
 
   img {
@@ -52,9 +52,9 @@ const CardInfos = styled.div`
 const AddCarrinho = styled.button`
   align-self: center;
 
-  background-color: #52af26; /* Green */
+  background-color:#06aed5;
   border-radius: 10px;
-    border: none;
+    border: none ;
     color: white;
     padding: 15px 32px;
     text-align: center;
